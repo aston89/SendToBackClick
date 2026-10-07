@@ -2,8 +2,8 @@
 
 A tiny Windows utility that adds one simple function to the standard minimize button:
 
-* **Left-click `—`** → normal minimize (default behaviour)
-* **Right-click `—`** → send the window behind all other windows 
+* **Left-click `—`** → normal minimize
+* **Right-click `—`** → send the window behind all other windows
 
 The window stays open and is **not minimized**.
 
@@ -34,9 +34,9 @@ Then right-click the **minimize (`—`) button** of any standard window.
 
 To minimize normally, left-click it.
 
-## Build
+## Compile
 
-No .NET SDK is required.
+The repository contains the **source code and build script only**.
 
 Run:
 
@@ -44,7 +44,9 @@ Run:
 build-SendToBackClick.bat
 ```
 
-The included build script uses the C# compiler already provided by the Windows .NET Framework.
+The script uses the C# compiler included with the Windows .NET Framework. No .NET SDK is required.
+
+The resulting `SendToBackClick.exe` will be created in the same directory.
 
 ## Startup
 
@@ -59,4 +61,9 @@ Create a shortcut to `SendToBackClick.exe` in that folder.
 ## Compatibility
 
 Designed primarily for standard Windows title bars on **Windows 10 and Windows 11**.
+
 Applications with completely custom title bars may not support the same behavior.
+
+## License
+
+MIT
